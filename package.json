@@ -1,0 +1,33 @@
+{
+  "name": "text-readability-checker",
+  "version": "1.0.0",
+  "description": "A TypeScript class for checking the readability of text based on various factors.",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && tap test/*.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json",
+    "./README.md": "./README.md",
+    "./src": "./src",
+    "./dist": "./dist"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "tinycolor2": "^1.4.2"
+  },
+  "devDependencies": {
+    "@types/tap": "^15.0.8",
+    "@types/tinycolor2": "^1.4.3",
+    "tap": "^16.3.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
